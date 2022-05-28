@@ -1,0 +1,113 @@
+.container {
+    background: lightskyblue;
+    width: 95%;
+    margin: 33px auto;
+    height: 100vh;
+  }
+  
+  .btn {
+    border-radius: 15px;
+    background-color: rgb(252, 252, 43);
+    position: absolute;
+    top: 50%;
+    left: 22%;
+  
+    padding: 15px 120px;
+  }
+  
+  .top {
+    font-size: 35px;
+    z-index: 1;
+  }
+  .buttom {
+    font-size: 22px;
+    z-index: 1;
+  }
+  
+  .arrow {
+    width: 100px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    top: -32px;
+    right: -471px;
+  }
+  
+  .arrow::after {
+    content: "";
+    display: inline-block;
+    border-radius: 4px;
+  
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -6px;
+    bottom: 13px;
+  }
+  
+  .arrow::before {
+    content: "";
+    display: inline-block;
+    border-radius: 4px;
+  
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -6px;
+    bottom: -13px;
+  }
+  
+  marquee {
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 399px;
+    font-size: 30px;
+    z-index: -1;
+  }
+  .p {
+    color: rgb(54, 50, 50);
+    text-shadow: 2px 1px rgb(92, 90, 90);
+    opacity: 0.7;
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .toggle-container{
+      background: #888;
+      display: none;
+  }
+
+  .active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: antiquewhite;
+      height: 100%;
+      width: 50%;
+      top:0;
+      left:0;
+      transition: all 3s ease-in;
+  }
+  
+  .hover:hover {
+    background-color: rgb(224, 224, 9);
+  }
+  /* media query for desktop version mainly for code pen */
+  
+  @media only screen and (min-width: 400px) and (max-width: 1200px) {
+    marquee {
+      position: absolute;
+      top: 280px;
+      /* bottom: 200px; */
+    }
+  }
+  
