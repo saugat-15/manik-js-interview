@@ -1,0 +1,58 @@
+.container{
+background: lightskyblue;
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.container-transition{
+    transition: all 2s ease;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: rgb(210, 196, 13);
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 100    ;
+}
+
+.btn i{
+    color: aliceblue;
+}
+
+.btn:hover{
+    background: rgb(189, 178, 20);
+    cursor: pointer;
+}
+
+.page{
+    position: relative;
+}
+
+.initial {
+position: absolute;
+top:45%;
+left:40%
+
+}
+
+.hidden{
+    display: none;
+}
+
+.active-btn{
+    transform: translateX(-200px);
+    transition: all .5s ease-in-out;
+}
+
+.active-text{
+    transform: translateX(300px);
+    transition: all .5s ease-in-out;
+}

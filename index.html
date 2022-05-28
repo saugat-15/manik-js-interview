@@ -4,25 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Button Functionality</title>
-    <link rel="stylesheet" href="pace.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="app.css">
+    <title>New Design</title>
   </head>
   <body>
-    <div class="container">
-      <div>
-        <button class="btn hover">
-            <span class="top">DAMMIT, I NEED HELP NOW</span><br>
-            <span  class="buttom">Be quick ! We only have 5 spots available</span >
-              <div class="arrow"></div>F
-               </button>
+      <div class="page">
+          <div class="container">
+            <button class="btn transform">
+              <div>
+                <p>DAMMIT, I NEED HELP NOW</p>
+                <p>Be quick! We only have 5 spots available.</p>
+              </div>
+              <i class="fa-5x fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+          <div class="initial">
+            <p>I am a hidden text. I should toggle open and closed with a </br>slide effect when you click the button above!</p>
+          </div>
       </div>
-      <div class="toggle-container">
-        <p>I am a hidden text. I should toggle open and closed with a </br>slide effect when you click the button above!</p>
-    </div>
-    </div>
-
     
-    <script src="pace.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
